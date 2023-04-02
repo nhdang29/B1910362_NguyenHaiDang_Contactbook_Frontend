@@ -1,4 +1,5 @@
 <template>
+    <AppHeader class="mb-3"/>
     <div class="page row">
         <div class="col-md-10">
             <InputSearch v-model="searchText" />
@@ -47,10 +48,12 @@ import ContactCard from "@/components/ContactCard.vue";
 import InputSearch from "@/components/InputSearch.vue";
 import ContactList from "@/components/ContactList.vue";
 import ContactService from "@/services/contact.service";
+import AppHeader from "../components/AppHeader.vue";
 
 
 export default {
     components: {
+        AppHeader,
         ContactCard,
         InputSearch,
         ContactList,
